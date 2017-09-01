@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="215" width="375" height="452"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="QF2-V0-hjE" customClass="PartyCell" customModule="PartyRock" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="105" id="QF2-V0-hjE" customClass="PartyCell" customModule="PartyRock" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QF2-V0-hjE" id="KdI-SY-c4x">
@@ -125,6 +125,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="gwb-d1-Cwl" id="n4M-YP-i8y"/>
                         <segue destination="XYe-W3-le4" kind="showDetail" identifier="Detail" id="kKV-KQ-M8e"/>
                     </connections>
                 </viewController>
