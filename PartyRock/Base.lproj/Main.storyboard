@@ -126,7 +126,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="gwb-d1-Cwl" id="n4M-YP-i8y"/>
-                        <segue destination="XYe-W3-le4" kind="showDetail" identifier="Detail" id="kKV-KQ-M8e"/>
+                        <segue destination="XYe-W3-le4" kind="showDetail" identifier="VideoVC" id="kKV-KQ-M8e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -152,14 +152,30 @@
                                     <constraint firstAttribute="height" constant="250" id="AyB-Xb-HJC"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlE-CM-9ae">
+                                <rect key="frame" x="10" y="300" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RSl-aT-xbv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.88974877571696553" green="0.88974877571696553" blue="0.88974877571696553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zlE-CM-9ae" firstAttribute="leading" secondItem="fR0-fO-VFf" secondAttribute="leading" constant="10" id="CRP-kz-pgA"/>
+                            <constraint firstAttribute="trailing" secondItem="zlE-CM-9ae" secondAttribute="trailing" constant="10" id="JYG-lt-vAh"/>
                             <constraint firstItem="qjn-xN-ulx" firstAttribute="leading" secondItem="fR0-fO-VFf" secondAttribute="leading" id="beQ-wi-gDd"/>
                             <constraint firstAttribute="trailing" secondItem="qjn-xN-ulx" secondAttribute="trailing" id="r0R-tV-2sI"/>
                             <constraint firstItem="qjn-xN-ulx" firstAttribute="top" secondItem="fR0-fO-VFf" secondAttribute="top" id="stE-fa-m7s"/>
+                            <constraint firstItem="zlE-CM-9ae" firstAttribute="top" secondItem="qjn-xN-ulx" secondAttribute="bottom" constant="50" id="udS-Wp-fWn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="zlE-CM-9ae" id="Swm-Vg-MwN"/>
+                        <outlet property="webView" destination="qjn-xN-ulx" id="H9W-xT-dho"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gjm-Zj-Au6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
